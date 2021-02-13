@@ -4,3 +4,8 @@ This is an extended guide that illustrates how to build Tensorflow Lite Support 
 
 ## First install Docker
 If you have already Docker in your system then you can skip this part. If not go to the official page, download [Docker for Windows](https://www.docker.com/products/docker-desktop) and install Docker in your system. Run Docker desktop and if it prompts to upgrade WSL 2 then do this procedure also. After a restart of your PC run again to start Docker. You will see at your desktop the main window:
+
+<img src="images/docker_main.PNG" width="2560" height="540">
+
+## Then collect neccessary files
+Create a new folder and insert the 3 important files inside (build_support_aar_with_docker.sh, build_support_aar.sh and tflite-android.Dockerfile):
