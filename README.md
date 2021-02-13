@@ -54,7 +54,18 @@ Third set the location of the Python library by inserting and running: `sudo ln 
 Finally copy paste `./build_support_aar_with_docker.sh` and run it.
 
 Now procedure runs, responde "Yes" to Google's License agreement and neccessary libraries are downloaded.
+
 After 5-10 minutes build will be successful.
+
+<img src="images/build_success.PNG" width="2560" height="340">
+
+## Move generated folder from container back to Windoes folder
+
+At the second Powershell window where we can execute windows commands copy, paste and run `docker cp d40836790a39:tensorflow_src/bazel-bin/tensorflow_lite_support tensorflow-lite-support` With this command we move all the generates files from the container back to Windows file system. 
+
+<img src="images/generated_folder.PNG" width="2560" height="540">
+
+
 
 
 
