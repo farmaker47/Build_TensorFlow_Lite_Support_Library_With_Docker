@@ -16,4 +16,9 @@ Click Shift + Right click of mouse and open a PowerShell window inside the folde
 
 <img src="images/power_shell_here.PNG" width="2560" height="540">
 
-Then copy, paste and execute command `docker build . -t tf-support-builder -f tflite-android.Dockerfile` inside the Powershell window that has been opened:
+Then copy, paste command `docker build . -t tf-support-builder -f tflite-android.Dockerfile` inside the Powershell window that has been opened:
+
+<img src="images/paste_command.PNG" width="2560" height="340">
+
+Hit Enter and Docker starts downloading TensorFlow latest code, Android SDK and NDK:
+
