@@ -39,10 +39,22 @@ We execute command `docker container ls --all` to find out the number of contain
 - Second move tensorflow_lite_support folder inside the container by executing `docker cp tensorflow_lite_support d40836790a39:/tensorflow_src` 
 - Third execute `docker cp build_support_aar_with_docker.sh d40836790a39:/` to move the second script file at the container
 
+<img src="images/3_commands_at_container.PNG" width="2560" height="340">
+
+CAUTION: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above 3 commands.
+
 ## Go back at the first Power Shell window and execute linux commands
 
 First execute `ls` to view the files
-Second 
+Second make the script file executable by inserting and running `chmod +x build_support_aar_with_docker.sh`
+Third set the location of the Python library by inserting and running: `sudo ln -sf /usr/bin/python3 /usr/bin/python`
+Finally copy paste `./build_support_aar_with_docker.sh` and run it.
+
+Now procedure runs, responde "Yes" to Google's License agreement and neccessary libraries are downloaded.
+After 5-10 minutes build will be successful.
+
+
+
 
 
 
