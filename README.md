@@ -22,3 +22,7 @@ Then copy, paste command `docker build . -t tf-support-builder -f tflite-android
 
 Hit Enter and Docker starts downloading TensorFlow latest code, Android SDK and NDK:
 
+<img src="images/download_tensorflow_devel.PNG" width="2560" height="540">
+
+Copy, paste and run command `docker run -it -v pwd:/host_dir tf-support-builder bash` to start the container. After some seconds you will see:
+
