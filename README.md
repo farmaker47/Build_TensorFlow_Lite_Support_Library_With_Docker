@@ -28,6 +28,12 @@ Copy, paste and run command `docker run -it -v pwd:/host_dir tf-support-builder 
 
 <img src="images/start_container_command.PNG" width="2560" height="340">
 
+## Download the tensorflow_lite_support folder
+
+Go to official Google's [repository](https://github.com/tensorflow/tflite-support) and download the code. We are specifically interested in the tensorflow_lite_support folder so unzip the file that you have downloaded from the repository and copy paste only the tensorflow_lite_support folder inside the folder that you have the 3 important files.
+
+
+
 ## Import the script files at specific locations inside Docker container
 
 To do this procedure we have to open a second Power shell window at the same folder where the scripts are. This is because at the first container we are already in Linux environment inside the container and we cannot move the files from Windows:
