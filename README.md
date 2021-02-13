@@ -8,4 +8,9 @@ If you have already Docker in your system then you can skip this part. If not go
 <img src="images/docker_main.PNG" width="2560" height="540">
 
 ## Then collect neccessary files
-Create a new folder and insert the 3 important files inside (build_support_aar_with_docker.sh, build_support_aar.sh and tflite-android.Dockerfile):
+Create a new folder and insert the 3 important files (that you can find here at the main branch) inside (build_support_aar_with_docker.sh, build_support_aar.sh and tflite-android.Dockerfile):
+
+<img src="images/3_files.PNG" width="2560" height="540">
+
+Click Shift + Right click of mouse and open a PowerShell window inside the folder that contains the 3 files:
+
