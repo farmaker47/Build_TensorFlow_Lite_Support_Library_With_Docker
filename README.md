@@ -46,8 +46,11 @@ CAUTION: name of the container always change so do not use `d40836790a39` but fi
 ## Go back at the first Power Shell window and execute linux commands
 
 First execute `ls` to view the files
+
 Second make the script file executable by inserting and running `chmod +x build_support_aar_with_docker.sh`
+
 Third set the location of the Python library by inserting and running: `sudo ln -sf /usr/bin/python3 /usr/bin/python`
+
 Finally copy paste `./build_support_aar_with_docker.sh` and run it.
 
 Now procedure runs, responde "Yes" to Google's License agreement and neccessary libraries are downloaded.
