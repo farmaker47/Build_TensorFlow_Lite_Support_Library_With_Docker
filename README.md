@@ -34,7 +34,7 @@ Go to official Google's [repository](https://github.com/tensorflow/tflite-suppor
 
 <img src="images/4_files.PNG" width="2560" height="540">
 
-In case you want to do some changes to the files do them before the below procedure.
+In case you want to do some changes to the script files or the folder files do them before the below procedure.
 
 ## Import the script files and tensorflow_lite_support folder at specific locations inside Docker container
 
@@ -42,7 +42,7 @@ To do this procedure we have to open a second Power shell window at the same fol
 
 <img src="images/power_shell_4_here.PNG" width="2560" height="540">
 
-We execute command `docker container ls --all` to find out the number of containers that exist and their names eg d40836790a39. After that we move the 2 script files and the folder that contains the TensorFlow Lite Support libray inside specific locations of the container:
+We execute command `docker container ls --all` to find out the number of containers that exist and their names eg d40836790a39. After that we move the 2 script files and the folder that contains the TensorFlow Lite Support files inside specific locations of the container:
 - First execute `docker cp build_support_aar.sh d40836790a39:/tensorflow_src/tensorflow/lite/tools/` to insert it at `d40836790a39` container and inside `tensorflow_src/tensorflow/lite/tools` folder
 - Second move tensorflow_lite_support folder inside the container by executing `docker cp tensorflow_lite_support d40836790a39:/tensorflow_src` 
 - Third execute `docker cp build_support_aar_with_docker.sh d40836790a39:/` to move the second script file at the container
