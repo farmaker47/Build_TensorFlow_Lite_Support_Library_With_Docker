@@ -26,3 +26,19 @@ Hit Enter and Docker starts downloading TensorFlow latest code, Android SDK and 
 
 Copy, paste and run command `docker run -it -v pwd:/host_dir tf-support-builder bash` to start the container. After some seconds you will see:
 
+<img src="images/start_container_command.PNG" width="2560" height="340">
+
+## Import the script files at specific locations inside Docker container
+
+To do this procedure we have to open a second Power shell window at the same folder where the scripts are. This is because at the first container we are already in Linux environment inside the container and we cannot move the files from Windows:
+
+<img src="images/power_shell_here.PNG" width="2560" height="540">
+
+We execute command `docker container ls --all` to find out the number of containers that exist and their names eg d40836790a39. After that we move the 2 script files and the folder that contains the TensorFlow Lite Support libray inside specific locations of the container:
+- First execute `docker cp build_support_aar.sh d40836790a39:/tensorflow_src/tensorflow/lite/tools/` to insert it at `d40836790a39` container and inside `tensorflow_src/tensorflow/lite/tools` folder
+- Second move tensorflow_lite_support folder inside the container by executing `docker cp tensorflow_lite_support d40836790a39:/tensorflow_src` 
+
+
+
+
+
