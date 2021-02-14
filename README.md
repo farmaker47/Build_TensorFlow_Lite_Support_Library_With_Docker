@@ -42,7 +42,7 @@ Go to official Google's [repository](https://github.com/tensorflow/tflite-suppor
 
 <img src="images/4_files.PNG" width="2560" height="540">
 
-In case you want to do some changes to the script files or the folder files do them before the below procedure.
+In case you want to do some changes to the script files or the folder files **do them before the below procedure**.
 
 ## Import the script files and tensorflow_lite_support folder at specific locations inside Docker container
 
@@ -68,7 +68,7 @@ to move the second script file at the container
 
 <img src="images/3_commands_at_container.PNG" width="2560" height="340">
 
-CAUTION: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above 3 commands.
+**CAUTION**: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above 3 commands.
 
 ## Go back at the first Power Shell window and execute linux commands
 
@@ -96,13 +96,13 @@ With this command we move all the generates files from the container back to Win
 
 <img src="images/generated_folder.PNG" width="2560" height="540">
 
-CAUTION: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above command.
+**CAUTION**: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above command.
 
 If we open the tensorflow-lite-support folder and then java folder we can see the generated files. We are specifically interested in libtensorflowlite_support.jar file:
 
 <img src="images/final_jar.PNG" width="2560" height="540">
 
-Rename the specific file to classes.jar and follow the below procedure
+**Rename** the specific file to classes.jar and follow the below procedure
 
 ## Download latest tensorflow_lite_support.aar file from Maven repository
 
@@ -110,7 +110,7 @@ Go to this [link](https://dl.bintray.com/google/tensorflow/org/tensorflow/tensor
 
 <img src="images/original_aar_file.PNG" width="2560" height="540">
 
-REPLACE the classes.jar file with the one that exists inside the generated folder of the BUILD procedure and then close the zip file and change the extention back to .aar
+**REPLACE** the classes.jar file with the one that exists inside the generated folder (that you have renamed to classes.jar also) of the BUILD procedure and then close the zip file and change the extention back to .aar
 
 Congrats now you have a working .aar file with the generated code from the build procedure that you can use inside an android studio project!
 
