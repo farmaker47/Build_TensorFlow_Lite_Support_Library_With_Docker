@@ -16,7 +16,11 @@ Click Shift + Right click of mouse and open a PowerShell window inside the folde
 
 <img src="images/power_shell_here_new.PNG" width="2560" height="540">
 
-Then copy, paste command `docker build . -t tf-support-builder -f tflite-android.Dockerfile` inside the Powershell window that has been opened:
+Then copy, paste command
+
+`docker build . -t tf-support-builder -f tflite-android.Dockerfile`
+
+inside the Powershell window that has been opened:
 
 <img src="images/paste_command.PNG" width="2560" height="340">
 
@@ -24,7 +28,11 @@ Hit Enter and Docker starts downloading TensorFlow latest code, Android SDK and 
 
 <img src="images/download_tensorflow_devel.PNG" width="2560" height="540">
 
-After the end of the above procedure copy, paste and run command `docker run -it -v pwd:/host_dir tf-support-builder bash` to start the container. After some seconds you will see:
+After the end of the above procedure copy, paste and run command 
+
+`docker run -it -v pwd:/host_dir tf-support-builder bash`
+
+to start the container. After some seconds you will see:
 
 <img src="images/start_container_command.PNG" width="2560" height="340">
 
@@ -43,9 +51,20 @@ To do this procedure we have to open a second Power shell window at the same fol
 <img src="images/power_shell_4_here.PNG" width="2560" height="540">
 
 We execute command `docker container ls --all` to find out the number of containers that exist and their names eg d40836790a39. After that we move the 2 script files and the folder that contains the TensorFlow Lite Support files inside specific locations of the container:
-- First execute `docker cp build_support_aar.sh d40836790a39:/tensorflow_src/tensorflow/lite/tools/` to insert it at `d40836790a39` container and inside `tensorflow_src/tensorflow/lite/tools` folder
-- Second move tensorflow_lite_support folder inside the container by executing `docker cp tensorflow_lite_support d40836790a39:/tensorflow_src` 
-- Third execute `docker cp build_support_aar_with_docker.sh d40836790a39:/` to move the second script file at the container
+- First execute
+
+`docker cp build_support_aar.sh d40836790a39:/tensorflow_src/tensorflow/lite/tools/` 
+
+to insert it at `d40836790a39` container and inside `tensorflow_src/tensorflow/lite/tools` folder
+- Second move tensorflow_lite_support folder inside the container by executing 
+
+`docker cp tensorflow_lite_support d40836790a39:/tensorflow_src` 
+
+- Third execute
+
+`docker cp build_support_aar_with_docker.sh d40836790a39:/` 
+
+to move the second script file at the container
 
 <img src="images/3_commands_at_container.PNG" width="2560" height="340">
 
@@ -69,7 +88,11 @@ After 5-10 minutes build will be successful.
 
 ## Move generated folder from container back to Windoes folder
 
-At the second Powershell window where we can execute windows commands copy, paste and run `docker cp d40836790a39:tensorflow_src/bazel-bin/tensorflow_lite_support tensorflow-lite-support` With this command we move all the generates files from the container back to Windows file system. 
+At the second Powershell window where we can execute windows commands copy, paste and run
+
+`docker cp d40836790a39:tensorflow_src/bazel-bin/tensorflow_lite_support tensorflow-lite-support`
+
+With this command we move all the generates files from the container back to Windows file system. 
 
 <img src="images/generated_folder.PNG" width="2560" height="540">
 
