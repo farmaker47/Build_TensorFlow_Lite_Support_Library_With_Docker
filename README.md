@@ -14,7 +14,7 @@ Create a new folder and insert the 3 important files (build_support_aar_with_doc
 
 Click Shift + Right click of mouse and open a PowerShell window inside the folder that contains the 3 files:
 
-<img src="images/power_shell_here.PNG" width="2560" height="540">
+<img src="images/power_shell_here_new.PNG" width="2560" height="540">
 
 Then copy, paste command `docker build . -t tf-support-builder -f tflite-android.Dockerfile` inside the Powershell window that has been opened:
 
