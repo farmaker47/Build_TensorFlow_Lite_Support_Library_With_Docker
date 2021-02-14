@@ -75,13 +75,17 @@ At the second Powershell window where we can execute windows commands copy, past
 
 CAUTION: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above command.
 
-If we open the tensorflow-lite-supportfolder and then java folder we can see the generated files:
+If we open the tensorflow-lite-supportfolder and then java folder we can see the generated files. We are specifically interested in libtensorflowlite_support.jar file:
 
 <img src="images/final_jar.PNG" width="2560" height="540">
 
+Rename the specific file to classes.jar and follow the below procedure
+
 ## Download latest tensorflow_lite_support.aar file from Maven repository
 
+Go to this [link](https://dl.bintray.com/google/tensorflow/org/tensorflow/tensorflow-lite-support/0.1.0/) and download the current tensorflow_lite_support-0.1.0.aar file. Change the extention of the file (.aar) to .zip and open it. Inside you will see some files and folders:
 
+<img src="images/original_aar_file.PNG" width="2560" height="540">
 
 
 
