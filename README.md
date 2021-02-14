@@ -7,8 +7,8 @@ If you have already Docker in your system then you can skip this part. If not go
 
 <img src="images/docker_main.PNG" width="2560" height="540">
 
-## Then collect neccessary files and start a container
-Create a new folder and insert the 3 important files (that you can find here at the main branch) inside (build_support_aar_with_docker.sh, build_support_aar.sh and tflite-android.Dockerfile):
+## Collect neccessary files and start a container
+Create a new folder and insert the 3 important files (build_support_aar_with_docker.sh, build_support_aar.sh and tflite-android.Dockerfile) that you can find here at the main branch:
 
 <img src="images/3_files.PNG" width="2560" height="540">
 
@@ -24,7 +24,7 @@ Hit Enter and Docker starts downloading TensorFlow latest code, Android SDK and 
 
 <img src="images/download_tensorflow_devel.PNG" width="2560" height="540">
 
-Copy, paste and run command `docker run -it -v pwd:/host_dir tf-support-builder bash` to start the container. After some seconds you will see:
+After the end of the above procedure copy, paste and run command `docker run -it -v pwd:/host_dir tf-support-builder bash` to start the container. After some seconds you will see:
 
 <img src="images/start_container_command.PNG" width="2560" height="340">
 
@@ -61,7 +61,7 @@ Third set the location of the Python library by inserting and running: `sudo ln 
 
 Finally copy paste `./build_support_aar_with_docker.sh` and run it.
 
-Now procedure runs, responde "Yes" to Google's License agreement and neccessary libraries are downloaded.
+Now procedure runs, respond "Yes" to Google's License agreement and neccessary libraries are downloaded.
 
 After 5-10 minutes build will be successful.
 
@@ -72,6 +72,16 @@ After 5-10 minutes build will be successful.
 At the second Powershell window where we can execute windows commands copy, paste and run `docker cp d40836790a39:tensorflow_src/bazel-bin/tensorflow_lite_support tensorflow-lite-support` With this command we move all the generates files from the container back to Windows file system. 
 
 <img src="images/generated_folder.PNG" width="2560" height="540">
+
+CAUTION: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above command.
+
+If we open the tensorflow-lite-supportfolder and then java folder we can see the generated files:
+
+<img src="images/final_jar.PNG" width="2560" height="540">
+
+## Download latest tensorflow_lite_support.aar file from Maven repository
+
+
 
 
 
