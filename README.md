@@ -93,9 +93,13 @@ Congrats now you have a working .aar file with the generated code from the build
 
 # Use the final .aar file inside Android Studio
 
-Create a libs folder under app's modeule folder and insert the .aar file. Out comment the gradle dependency for tensorflow-lite-support and use the code from .aar file the way you see inside the oval red line below:
+Create a libs folder under app's module folder and insert the .aar file. Out comment the gradle dependency for tensorflow-lite-support and use the code from .aar file the way you see inside the oval red line below:
 
 <img src="images/as_final.PNG" width="2560" height="540">
+
+# Conclusion
+
+With this procedure you can build a tensorflow_lite_support.aar file from source or you can change the code and create a custom .aar file that will include your custom functions inside. For a demonstration of a custom tensorflow_lite_support.aar file inside an android studio project view a repository [here](https://github.com/farmaker47/OCR_with_Keras/tree/with_custom_support_library) (with_custom_support_library branch). View the [builde.gradle](https://github.com/farmaker47/OCR_with_Keras/blob/with_custom_support_library/app/build.gradle) and [OcrmodelExecutor.kt](https://github.com/farmaker47/OCR_with_Keras/blob/with_custom_support_library/app/src/main/java/com/soloupis/sample/ocr_keras/fragments/ocr/OcrModelExecutor.kt) files to see how to set the .aar file and the usage of the custom library. At this example, conversion to grayscale and getBufferFromOneChannel have been added to the library. 
 
 
 
