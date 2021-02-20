@@ -86,7 +86,7 @@ After 5-10 minutes build will be successful.
 
 <img src="images/build_success.PNG" width="2560" height="340">
 
-## Move generated folder from container back to Windoes folder
+## Move generated folder from container back to Windows folder
 
 At the second Powershell window where we can execute windows commands copy, paste and run
 
