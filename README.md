@@ -108,7 +108,7 @@ Congrats you have a working .aar file that you can use inside an android studio 
 
 Create a libs folder under app's module folder and insert the .aar file. Out comment the gradle dependency for tensorflow-lite-support and use the code from .aar file the way you see inside the oval red line below:
 
-<img src="images/as_final.PNG" width="2560" height="540">
+<img src="images/inside_as.PNG" width="2560" height="540">
 
 # Conclusion
 
