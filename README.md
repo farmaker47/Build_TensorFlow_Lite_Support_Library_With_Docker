@@ -98,21 +98,11 @@ With this command we move all the generates files from the container back to Win
 
 **CAUTION**: name of the container always change so do not use `d40836790a39` but find out yours and replace at the above command.
 
-If we open the tensorflow-lite-support folder and then java folder we can see the generated files. We are specifically interested in libtensorflowlite_support.jar file:
+If we open the tensorflow-lite-support folder and then java folder we can see the generated files. We are specifically interested in tensorflowlite_support.aar file:
 
-<img src="images/final_jar.PNG" width="2560" height="540">
+<img src="images/final_with_aar.PNG" width="2560" height="540">
 
-**Rename** the specific file to classes.jar and follow the below procedure
-
-## Download latest tensorflow_lite_support.aar file from Maven repository
-
-Go to this [link](https://dl.bintray.com/google/tensorflow/org/tensorflow/tensorflow-lite-support/0.1.0/) and download the current tensorflow_lite_support-0.1.0.aar file. Change the extention of the file (.aar) to .zip and open it. Inside you will see some files and folders:
-
-<img src="images/original_aar_file.PNG" width="2560" height="540">
-
-**REPLACE** the classes.jar file with the one that exists inside the generated folder (that you have renamed to classes.jar also) of the BUILD procedure and then close the zip file and change the extention back to .aar
-
-Congrats now you have a working .aar file with the generated code from the build procedure that you can use inside an android studio project!
+Congrats you have a working .aar file that you can use inside an android studio project!
 
 # Use the final .aar file inside Android Studio
 
