@@ -164,10 +164,6 @@ case $i in
 esac
 done
 
-# Check if users already run configure
-
-
-
 # Build the standard aar package of no models provided.
 if [ -z ${FLAG_MODELS} ]; then
   bazel ${CACHE_DIR_FLAG} build -c opt --cxxopt='--std=c++14' \
@@ -211,7 +207,6 @@ bazel-bin/tensorflow/lite/tools/list_flex_ops_no_kernel_main \
   --graphs=${FLAG_MODELS} > ${TMP_DIR}/ops_list.txt
   
 generate_flex_aar
-
 
 # List the output files.
 rm -rf ${TMP_DIR}
