@@ -110,6 +110,10 @@ Create a libs folder under app's module folder and insert the .aar file. Out com
 
 <img src="images/inside_as.PNG" width="2560" height="540">
 
+# UPDATE 
+
+If you use Colab Notebooks you can find the same procedure [here](https://github.com/farmaker47/Build_TensorFlow_Lite_Support_Library_With_Docker/blob/main/Build_TensorFlow_Lite_Support__and_Task_libraries_Bazel.ipynb). Run the cells one by one and in the last cells select to build Support, Task Vision, Task Text or Task Audio library.
+
 # Conclusion
 
 With this procedure you can build a tensorflow_lite_support.aar file from source or you can change the code and create a custom .aar file that will include your custom functions inside. For a demonstration of a custom tensorflow_lite_support.aar file inside an android studio project view a repository [here](https://github.com/farmaker47/OCR_with_Keras/tree/with_custom_support_library) (with_custom_support_library branch). View the [builde.gradle](https://github.com/farmaker47/OCR_with_Keras/blob/with_custom_support_library/app/build.gradle) and [OcrmodelExecutor.kt](https://github.com/farmaker47/OCR_with_Keras/blob/with_custom_support_library/app/src/main/java/com/soloupis/sample/ocr_keras/fragments/ocr/OcrModelExecutor.kt) files to see how to set the .aar file and the usage of the custom library. At this example, conversion to grayscale and getBufferFromOneChannel have been added to the library. 
