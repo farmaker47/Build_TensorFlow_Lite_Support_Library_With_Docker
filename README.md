@@ -112,7 +112,7 @@ Create a libs folder under app's module folder and insert the .aar file. Out com
 
 # UPDATE 
 
-If you use Colab Notebooks you can find the same procedure [here](https://github.com/farmaker47/Build_TensorFlow_Lite_Support_Library_With_Docker/blob/main/Build_TensorFlow_Lite_Support__and_Task_libraries_Bazel.ipynb). Run the cells one by one and in the last cells select to build Support, Task Vision, Task Text or Task Audio library.
+If you use Colab Notebooks you can find the same procedure [here](https://github.com/farmaker47/Build_TensorFlow_Lite_Support_Library_With_Docker/blob/main/Build_TensorFlow_Lite_Support_Libraries_with_Bazel_and_Colab.ipynb). Run the cells one by one and in the last cells select to build Support, Task Vision, Task Text or Task Audio library.
 
 # Conclusion
 
